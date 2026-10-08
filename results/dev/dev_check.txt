@@ -1,0 +1,135 @@
+config: {'tau_m': 6.47, 'eps_D': 0.0, 'beta': 5.723524999999995, 'eps_size': 0.125}
+  1/5 seeds  36s elapsed  ~145s left
+  2/5 seeds  44s elapsed  ~66s left
+  3/5 seeds  80s elapsed  ~54s left
+  4/5 seeds  81s elapsed  ~20s left
+  5/5 seeds  117s elapsed  ~0s left
+
+(a) residue on the no-intervention network (B1), per disturbance:
+            resid_10  resid_60  T_conv  T_true    FRE
+dist                                                 
+asymmetric      24.0       0.0    29.0    63.0   59.0
+burst            0.0       0.0     0.0   630.0  630.0
+isolation      101.0      62.0   337.0   337.0  331.0
+latency          1.0       0.0    12.0    13.0    9.0
+loss             0.0       0.0     0.0     0.0    0.0
+partition      148.0      88.0   337.0   337.0  331.0
+
+(b) distinctness: share of (disturbance, seed) cells where two policies' outcomes differ
+  B1      vs B2     : differ in   83% of cells
+  B1      vs SARA   : differ in  100% of cells
+  B1      vs SARA-D : differ in  100% of cells
+  B1      vs SARA-R : differ in  100% of cells
+  B1      vs SARA-V : differ in  100% of cells
+  B2      vs SARA   : differ in  100% of cells
+  B2      vs SARA-D : differ in  100% of cells
+  B2      vs SARA-R : differ in  100% of cells
+  B2      vs SARA-V : differ in  100% of cells
+  SARA    vs SARA-D : differ in   67% of cells
+  SARA    vs SARA-R : differ in   87% of cells
+  SARA    vs SARA-V : differ in  100% of cells
+  SARA-D  vs SARA-R : differ in   87% of cells
+  SARA-D  vs SARA-V : differ in  100% of cells
+  SARA-R  vs SARA-V : differ in  100% of cells
+  minimum: (np.float64(0.6666666666666666), 'SARA', 'SARA-D')
+
+(c) per-policy medians across all disturbances (dev seeds):
+        T_det  T_decl  T_true  ...  transfers  unnecessary  reopened
+policy                         ...                                  
+B1        1.0     4.0   213.0  ...        0.0          0.0       0.0
+B2        1.0     4.3    32.5  ...       91.5         13.5       0.0
+SARA      1.0    17.0    51.0  ...      386.5        121.0       0.0
+SARA-D    1.0    16.0    51.0  ...        0.0          0.0       0.0
+SARA-R    1.0    16.0    51.0  ...      212.5          4.0       0.0
+SARA-V    1.0     6.0    51.0  ...      377.5        116.5       0.0
+
+[6 rows x 10 columns]
+
+per disturbance x policy: T_true median
+policy         B1     B2   SARA  SARA-D  SARA-R  SARA-V
+dist                                                   
+asymmetric   63.0   14.0   63.0    63.0    63.0    63.0
+burst       630.0  630.0  630.0   630.0   630.0   630.0
+isolation   337.0    9.0   14.0     9.0    14.0    78.0
+latency      13.0    7.0   12.0    13.0     9.0     9.0
+loss          0.0    0.0    0.0     0.0     0.0     0.0
+partition   337.0  124.0  124.0   239.0   124.0   124.0
+
+per disturbance x policy: T_decl median
+policy       B1   B2   SARA  SARA-D  SARA-R  SARA-V
+dist                                               
+asymmetric  4.0  4.4   23.0    20.0    18.0     5.0
+burst       0.0  0.0  566.0   566.0     0.0     0.0
+isolation   6.0  6.0   17.0    15.0    18.0     7.0
+latency     4.0  4.3   17.0    14.0    16.0     5.0
+loss        4.0  4.3   14.0    14.0    14.0     6.0
+partition   6.0  6.0   16.0    41.0    18.0     7.0
+
+per disturbance x policy: over_delay median
+policy       B1   B2  SARA  SARA-D  SARA-R  SARA-V
+dist                                              
+asymmetric  0.0  0.0   0.0     0.0     0.0     0.0
+burst       0.0  0.0   0.0     0.0     0.0     0.0
+isolation   0.0  0.0   6.0     6.0     4.0     0.0
+latency     0.0  0.0   8.0     1.0     8.0     0.0
+loss        4.0  4.1  14.0    14.0    14.0     6.0
+partition   0.0  0.0   0.0     0.0     0.0     0.0
+
+per disturbance x policy: inband_kB median
+policy       B1     B2   SARA  SARA-D  SARA-R  SARA-V
+dist                                                 
+asymmetric  0.0  209.5  152.7     0.0    93.8   130.4
+burst       0.0    0.0    0.0     0.0     0.0     0.0
+isolation   0.0  142.7  100.1    44.4    42.9   100.1
+latency     0.0  200.1  165.0     0.0    89.2   165.3
+loss        0.0  253.0    0.0     0.0     0.0     0.0
+partition   0.0  369.3  242.2   199.9   178.2   242.2
+
+per disturbance x policy: monitor_delta_kB median
+policy       B1   B2    SARA  SARA-D  SARA-R  SARA-V
+dist                                                
+asymmetric  0.0  0.0  2295.3  2297.3  2297.3  2297.5
+burst       0.0  0.0  2711.7  2711.7  2701.2  2701.2
+isolation   0.0  0.0  2305.7  2303.7  2303.5  2305.7
+latency     0.0  0.0  2308.0  2309.3  2309.3  2308.0
+loss        0.0  0.0  2310.8  2310.8  2310.8  2310.8
+partition   0.0  0.0  2303.6  2298.9  2298.6  2291.4
+
+per disturbance x policy: unnecessary median
+policy       B1     B2   SARA  SARA-D  SARA-R  SARA-V
+dist                                                 
+asymmetric  0.0   52.0  157.0     0.0    10.0   127.0
+burst       0.0    0.0    0.0     0.0     0.0     0.0
+isolation   0.0    4.0  145.0     1.0     3.0   145.0
+latency     0.0   25.0  369.0     0.0   164.0   367.0
+loss        0.0    7.0    0.0     0.0     0.0     0.0
+partition   0.0  102.0  219.0    14.0     6.0   219.0
+
+per disturbance x policy: FRE median
+policy         B1     B2   SARA  SARA-D  SARA-R  SARA-V
+dist                                                   
+asymmetric   59.0    9.7   40.0    40.0    39.0    57.0
+burst       630.0  630.0   90.0    90.0   630.0   630.0
+isolation   331.0    3.0    0.0     0.0     0.0    71.0
+latency       9.0    2.7    0.0     0.0     0.0     3.0
+loss          0.0    0.0    0.0     0.0     0.0     0.0
+partition   331.0  118.0  108.0   201.0   106.0   116.0
+
+per disturbance x policy: T_conv median
+policy         B1   B2  SARA  SARA-D  SARA-R  SARA-V
+dist                                                
+asymmetric   29.0  7.0  11.0    12.0     9.0    11.0
+burst         0.0  0.0   0.0     0.0     0.0     0.0
+isolation   337.0  4.0   7.0     9.0     9.0     7.0
+latency      12.0  6.0   9.0    12.0     8.0     8.0
+loss          0.0  0.0   0.0     0.0     0.0     0.0
+partition   337.0  3.0   7.0     8.0     9.0     7.0
+
+clean runs: incidents after warm-up (false alarms) mean per run
+policy
+B1        0.0
+SARA      0.0
+SARA-D    0.0
+SARA-R    0.0
+SARA-V    0.0
+Name: incidents_after_warmup, dtype: float64

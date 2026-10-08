@@ -1,0 +1,616 @@
+{
+ "seeds": [
+  3000,
+  3001,
+  3002,
+  3003,
+  3004,
+  3005,
+  3006,
+  3007,
+  3008,
+  3009,
+  3010,
+  3011,
+  3012,
+  3013,
+  3014,
+  3015,
+  3016,
+  3017,
+  3018,
+  3019,
+  3020,
+  3021,
+  3022,
+  3023,
+  3024,
+  3025,
+  3026,
+  3027,
+  3028,
+  3029
+ ],
+ "dists": [
+  "partition",
+  "isolation",
+  "asymmetric"
+ ],
+ "policies": [
+  "B1",
+  "B2",
+  "SARA"
+ ],
+ "main_cell": "random_regular_n10_d4_scaled",
+ "cells": {
+  "random_regular_n50_d8_scaled": {
+   "topology": "random_regular",
+   "n_nodes": 50,
+   "degree": 8,
+   "load": "scaled",
+   "overrides": {
+    "topology": "random_regular",
+    "n_nodes": 50,
+    "degree": 8,
+    "tx_rate": 20.0,
+    "block_capacity": 400
+   },
+   "dists": [
+    "partition"
+   ]
+  },
+  "erdos_renyi_n50_d8_scaled": {
+   "topology": "erdos_renyi",
+   "n_nodes": 50,
+   "degree": 8,
+   "load": "scaled",
+   "overrides": {
+    "topology": "erdos_renyi",
+    "n_nodes": 50,
+    "degree": 8,
+    "tx_rate": 20.0,
+    "block_capacity": 400
+   },
+   "dists": [
+    "partition"
+   ]
+  },
+  "watts_strogatz_n50_d8_scaled": {
+   "topology": "watts_strogatz",
+   "n_nodes": 50,
+   "degree": 8,
+   "load": "scaled",
+   "overrides": {
+    "topology": "watts_strogatz",
+    "n_nodes": 50,
+    "degree": 8,
+    "tx_rate": 20.0,
+    "block_capacity": 400
+   },
+   "dists": [
+    "partition"
+   ]
+  },
+  "random_regular_n50_d4_scaled": {
+   "topology": "random_regular",
+   "n_nodes": 50,
+   "degree": 4,
+   "load": "scaled",
+   "overrides": {
+    "topology": "random_regular",
+    "n_nodes": 50,
+    "degree": 4,
+    "tx_rate": 20.0,
+    "block_capacity": 400
+   },
+   "dists": [
+    "partition"
+   ]
+  },
+  "erdos_renyi_n50_d4_scaled": {
+   "topology": "erdos_renyi",
+   "n_nodes": 50,
+   "degree": 4,
+   "load": "scaled",
+   "overrides": {
+    "topology": "erdos_renyi",
+    "n_nodes": 50,
+    "degree": 4,
+    "tx_rate": 20.0,
+    "block_capacity": 400
+   },
+   "dists": [
+    "partition"
+   ]
+  },
+  "watts_strogatz_n50_d4_scaled": {
+   "topology": "watts_strogatz",
+   "n_nodes": 50,
+   "degree": 4,
+   "load": "scaled",
+   "overrides": {
+    "topology": "watts_strogatz",
+    "n_nodes": 50,
+    "degree": 4,
+    "tx_rate": 20.0,
+    "block_capacity": 400
+   },
+   "dists": [
+    "partition"
+   ]
+  },
+  "random_regular_n20_d8_scaled": {
+   "topology": "random_regular",
+   "n_nodes": 20,
+   "degree": 8,
+   "load": "scaled",
+   "overrides": {
+    "topology": "random_regular",
+    "n_nodes": 20,
+    "degree": 8,
+    "tx_rate": 8.0,
+    "block_capacity": 160
+   },
+   "dists": [
+    "partition",
+    "isolation",
+    "asymmetric"
+   ]
+  },
+  "erdos_renyi_n20_d8_scaled": {
+   "topology": "erdos_renyi",
+   "n_nodes": 20,
+   "degree": 8,
+   "load": "scaled",
+   "overrides": {
+    "topology": "erdos_renyi",
+    "n_nodes": 20,
+    "degree": 8,
+    "tx_rate": 8.0,
+    "block_capacity": 160
+   },
+   "dists": [
+    "partition",
+    "isolation",
+    "asymmetric"
+   ]
+  },
+  "watts_strogatz_n20_d8_scaled": {
+   "topology": "watts_strogatz",
+   "n_nodes": 20,
+   "degree": 8,
+   "load": "scaled",
+   "overrides": {
+    "topology": "watts_strogatz",
+    "n_nodes": 20,
+    "degree": 8,
+    "tx_rate": 8.0,
+    "block_capacity": 160
+   },
+   "dists": [
+    "partition",
+    "isolation",
+    "asymmetric"
+   ]
+  },
+  "random_regular_n50_d4_fixed": {
+   "topology": "random_regular",
+   "n_nodes": 50,
+   "degree": 4,
+   "load": "fixed",
+   "overrides": {
+    "topology": "random_regular",
+    "n_nodes": 50,
+    "degree": 4,
+    "tx_rate": 4.0,
+    "block_capacity": 80
+   },
+   "dists": [
+    "partition"
+   ]
+  },
+  "random_regular_n20_d4_scaled": {
+   "topology": "random_regular",
+   "n_nodes": 20,
+   "degree": 4,
+   "load": "scaled",
+   "overrides": {
+    "topology": "random_regular",
+    "n_nodes": 20,
+    "degree": 4,
+    "tx_rate": 8.0,
+    "block_capacity": 160
+   },
+   "dists": [
+    "partition",
+    "isolation",
+    "asymmetric"
+   ]
+  },
+  "erdos_renyi_n20_d4_scaled": {
+   "topology": "erdos_renyi",
+   "n_nodes": 20,
+   "degree": 4,
+   "load": "scaled",
+   "overrides": {
+    "topology": "erdos_renyi",
+    "n_nodes": 20,
+    "degree": 4,
+    "tx_rate": 8.0,
+    "block_capacity": 160
+   },
+   "dists": [
+    "partition",
+    "isolation",
+    "asymmetric"
+   ]
+  },
+  "watts_strogatz_n20_d4_scaled": {
+   "topology": "watts_strogatz",
+   "n_nodes": 20,
+   "degree": 4,
+   "load": "scaled",
+   "overrides": {
+    "topology": "watts_strogatz",
+    "n_nodes": 20,
+    "degree": 4,
+    "tx_rate": 8.0,
+    "block_capacity": 160
+   },
+   "dists": [
+    "partition",
+    "isolation",
+    "asymmetric"
+   ]
+  },
+  "random_regular_n10_d8_scaled": {
+   "topology": "random_regular",
+   "n_nodes": 10,
+   "degree": 8,
+   "load": "scaled",
+   "overrides": {
+    "topology": "random_regular",
+    "n_nodes": 10,
+    "degree": 8,
+    "tx_rate": 4.0,
+    "block_capacity": 80
+   },
+   "dists": [
+    "partition",
+    "isolation",
+    "asymmetric"
+   ]
+  },
+  "erdos_renyi_n10_d8_scaled": {
+   "topology": "erdos_renyi",
+   "n_nodes": 10,
+   "degree": 8,
+   "load": "scaled",
+   "overrides": {
+    "topology": "erdos_renyi",
+    "n_nodes": 10,
+    "degree": 8,
+    "tx_rate": 4.0,
+    "block_capacity": 80
+   },
+   "dists": [
+    "partition",
+    "isolation",
+    "asymmetric"
+   ]
+  },
+  "watts_strogatz_n10_d8_scaled": {
+   "topology": "watts_strogatz",
+   "n_nodes": 10,
+   "degree": 8,
+   "load": "scaled",
+   "overrides": {
+    "topology": "watts_strogatz",
+    "n_nodes": 10,
+    "degree": 8,
+    "tx_rate": 4.0,
+    "block_capacity": 80
+   },
+   "dists": [
+    "partition",
+    "isolation",
+    "asymmetric"
+   ]
+  },
+  "random_regular_n20_d4_fixed": {
+   "topology": "random_regular",
+   "n_nodes": 20,
+   "degree": 4,
+   "load": "fixed",
+   "overrides": {
+    "topology": "random_regular",
+    "n_nodes": 20,
+    "degree": 4,
+    "tx_rate": 4.0,
+    "block_capacity": 80
+   },
+   "dists": [
+    "partition",
+    "isolation",
+    "asymmetric"
+   ]
+  },
+  "random_regular_n10_d4_scaled": {
+   "topology": "random_regular",
+   "n_nodes": 10,
+   "degree": 4,
+   "load": "scaled",
+   "overrides": {
+    "topology": "random_regular",
+    "n_nodes": 10,
+    "degree": 4,
+    "tx_rate": 4.0,
+    "block_capacity": 80
+   },
+   "dists": [
+    "partition",
+    "isolation",
+    "asymmetric"
+   ]
+  },
+  "erdos_renyi_n10_d4_scaled": {
+   "topology": "erdos_renyi",
+   "n_nodes": 10,
+   "degree": 4,
+   "load": "scaled",
+   "overrides": {
+    "topology": "erdos_renyi",
+    "n_nodes": 10,
+    "degree": 4,
+    "tx_rate": 4.0,
+    "block_capacity": 80
+   },
+   "dists": [
+    "partition",
+    "isolation",
+    "asymmetric"
+   ]
+  },
+  "watts_strogatz_n10_d4_scaled": {
+   "topology": "watts_strogatz",
+   "n_nodes": 10,
+   "degree": 4,
+   "load": "scaled",
+   "overrides": {
+    "topology": "watts_strogatz",
+    "n_nodes": 10,
+    "degree": 4,
+    "tx_rate": 4.0,
+    "block_capacity": 80
+   },
+   "dists": [
+    "partition",
+    "isolation",
+    "asymmetric"
+   ]
+  }
+ },
+ "recalibration": {
+  "random_regular_n50_d4_scaled": {
+   "values": {
+    "tau_m": 9.82,
+    "eps_D": 0.4579591836734694,
+    "beta": 6.490649,
+    "eps_size": 0.06009116279069763
+   },
+   "dev_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "propagation": {
+    "n": 93028,
+    "q50": 4.0679418252298944,
+    "q99": 5.771897888369996,
+    "q999": 6.548625109416228,
+    "max": 456.32440151219186
+   },
+   "divergence": {
+    "n_audits": 1805,
+    "frac_nonzero": 0.13240997229916898,
+    "q995": 0.4579591836734694,
+    "max": 0.4579591836734694,
+    "median_R": 606.0,
+    "resolution": 6.6006600660066e-05
+   },
+   "backlog": {
+    "q50": 1.875,
+    "q995": 6.07465,
+    "q999": 6.298079999999991,
+    "max": 6.49,
+    "tried": [
+     {
+      "rule": "q99.5",
+      "limit": 6.07465,
+      "false_incidents_per_run": 0.6
+     },
+     {
+      "rule": "q99.9",
+      "limit": 6.298079999999991,
+      "false_incidents_per_run": 0.2
+     },
+     {
+      "rule": "max",
+      "limit": 6.490649,
+      "false_incidents_per_run": 0.0
+     }
+    ]
+   },
+   "size_proxy": {
+    "q50": 0.010896898575020955,
+    "q995": 0.055,
+    "q999": 0.06009116279069763,
+    "max": 0.0825,
+    "tried": [
+     {
+      "rule": "q99.5",
+      "limit": 0.055,
+      "false_incidents_per_run": 0.6
+     },
+     {
+      "rule": "q99.9",
+      "limit": 0.06009116279069763,
+      "false_incidents_per_run": 0.0
+     }
+    ]
+   }
+  },
+  "watts_strogatz_n50_d4_scaled": {
+   "values": {
+    "tau_m": 15.0,
+    "eps_D": 0.0051042954875257585,
+    "beta": 6.50065,
+    "eps_size": 0.1275
+   },
+   "dev_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "propagation": {
+    "n": 93028,
+    "q50": 5.507254637079072,
+    "q99": 8.645590401322455,
+    "q999": 9.997610388760442,
+    "max": 66.48219284193067
+   },
+   "divergence": {
+    "n_audits": 1805,
+    "frac_nonzero": 0.020498614958448753,
+    "q995": 0.0051042954875257585,
+    "max": 0.008592910848549974,
+    "median_R": 589.0,
+    "resolution": 6.791171477079796e-05
+   },
+   "backlog": {
+    "q50": 2.005,
+    "q995": 6.063475,
+    "q999": 6.3145999999999916,
+    "max": 6.5,
+    "tried": [
+     {
+      "rule": "q99.5",
+      "limit": 6.063475,
+      "false_incidents_per_run": 0.6
+     },
+     {
+      "rule": "q99.9",
+      "limit": 6.3145999999999916,
+      "false_incidents_per_run": 0.2
+     },
+     {
+      "rule": "max",
+      "limit": 6.50065,
+      "false_incidents_per_run": 0.0
+     }
+    ]
+   },
+   "size_proxy": {
+    "q50": 0.020048115477145148,
+    "q995": 0.11747365145228217,
+    "q999": 0.1275,
+    "max": 0.1325,
+    "tried": [
+     {
+      "rule": "q99.5",
+      "limit": 0.11747365145228217,
+      "false_incidents_per_run": 0.2
+     },
+     {
+      "rule": "q99.9",
+      "limit": 0.1275,
+      "false_incidents_per_run": 0.0
+     }
+    ]
+   }
+  },
+  "erdos_renyi_n50_d4_scaled": {
+   "values": {
+    "tau_m": 15.84,
+    "eps_D": 0.0,
+    "beta": 6.493149249999999,
+    "eps_size": 0.19048999999999977
+   },
+   "dev_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "propagation": {
+    "n": 93028,
+    "q50": 4.328992914120491,
+    "q99": 8.199514297897235,
+    "q999": 10.562614947824978,
+    "max": 24.143583039670148
+   },
+   "divergence": {
+    "n_audits": 1805,
+    "frac_nonzero": 0.0,
+    "q995": 0.0,
+    "max": 0.0,
+    "median_R": 535.0,
+    "resolution": 7.476635514018692e-05
+   },
+   "backlog": {
+    "q50": 1.91375,
+    "q995": 6.063575,
+    "q999": 6.29653499999999,
+    "max": 6.4925,
+    "tried": [
+     {
+      "rule": "q99.5",
+      "limit": 6.063575,
+      "false_incidents_per_run": 0.6
+     },
+     {
+      "rule": "q99.9",
+      "limit": 6.29653499999999,
+      "false_incidents_per_run": 0.2
+     },
+     {
+      "rule": "max",
+      "limit": 6.493149249999999,
+      "false_incidents_per_run": 0.0
+     }
+    ]
+   },
+   "size_proxy": {
+    "q50": 0.030274361400189215,
+    "q995": 0.17701620947630925,
+    "q999": 0.19048999999999977,
+    "max": 0.2,
+    "tried": [
+     {
+      "rule": "q99.5",
+      "limit": 0.17701620947630925,
+      "false_incidents_per_run": 0.4
+     },
+     {
+      "rule": "q99.9",
+      "limit": 0.19048999999999977,
+      "false_incidents_per_run": 0.0
+     }
+    ]
+   }
+  }
+ },
+ "secondary_cells": [
+  "random_regular_n50_d4_scaled",
+  "erdos_renyi_n50_d4_scaled",
+  "watts_strogatz_n50_d4_scaled"
+ ],
+ "secondary_dists": [
+  "partition"
+ ]
+}

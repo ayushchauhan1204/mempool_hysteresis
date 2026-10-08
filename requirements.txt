@@ -1,0 +1,9 @@
+streamlit==1.60.*
+plotly==6.9.*
+matplotlib==3.10.*
+numpy==2.4.*
+pandas==3.0.*
+scipy==1.17.*
+networkx==3.7.*
+Pillow>=12.1
+pytest==9.1.*

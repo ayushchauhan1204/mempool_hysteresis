@@ -1,0 +1,51 @@
+{
+ "rule": "cap = ceil(factor x M), M = largest per-node mempool size in clean B1 histories of dev seeds 0-4 sampled every 1 s over [0, horizon]",
+ "factors": {
+  "loose": 1.1,
+  "mid": 0.75,
+  "tight": 0.5
+ },
+ "dev_seeds": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "M": 474,
+ "q50": 108.0,
+ "q99": 397.0,
+ "q999": 457.0,
+ "per_seed": {
+  "0": {
+   "max": 474,
+   "q99": 428.1100000000006,
+   "q50": 188.0
+  },
+  "1": {
+   "max": 344,
+   "q99": 320.0,
+   "q50": 95.0
+  },
+  "2": {
+   "max": 463,
+   "q99": 424.0,
+   "q50": 123.0
+  },
+  "3": {
+   "max": 331,
+   "q99": 298.0,
+   "q50": 77.0
+  },
+  "4": {
+   "max": 417,
+   "q99": 374.0,
+   "q50": 98.0
+  }
+ },
+ "caps": {
+  "loose": 522,
+  "mid": 356,
+  "tight": 237
+ }
+}

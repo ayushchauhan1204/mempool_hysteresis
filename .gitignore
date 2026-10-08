@@ -1,0 +1,18 @@
+# Byte-compiled / cache
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Course materials / not for the public repo
+CBS3015_DA3_Mempool_Hysteresis.docx
+CBS3015_DA3_screenshot_checklist.md
+final.md
+taste-skill-main/

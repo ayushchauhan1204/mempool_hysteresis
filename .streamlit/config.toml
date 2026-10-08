@@ -1,0 +1,26 @@
+# Themes for the local frontend (streamlit run app.py). Dark is the default; switch with the Settings menu (top right:
+# System / Light / Dark). Series and chart colours live in app_lib/palette.py; the rounded-corner CSS in app_lib/style.py.
+[theme]
+baseRadius = "14px"
+showWidgetBorder = true
+
+[theme.light]
+primaryColor = "#1f5fa8"
+backgroundColor = "#fcfcfb"
+secondaryBackgroundColor = "#f3f2ee"
+textColor = "#1b1b1a"
+borderColor = "#dddcd5"
+
+[theme.dark]
+primaryColor = "#3572c3"
+backgroundColor = "#141413"
+secondaryBackgroundColor = "#1f1f1d"
+textColor = "#ecebe6"
+linkColor = "#7fb0ea"
+borderColor = "#34332f"
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "viewer"    # the menu with the System / Light / Dark switch; no developer items ("minimal" hides the menu)

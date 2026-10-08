@@ -1,0 +1,33 @@
+{
+ "seed": 1000,
+ "dist": "partition",
+ "residue_checks": [
+  {
+   "t_after_end": 10.0,
+   "hand": 234,
+   "pipeline": 234,
+   "match": true
+  },
+  {
+   "t_after_end": 30.0,
+   "hand": 221,
+   "pipeline": 221,
+   "match": true
+  },
+  {
+   "t_after_end": 120.0,
+   "hand": 55,
+   "pipeline": 55,
+   "match": true
+  }
+ ],
+ "fre_check": {
+  "T_decl_hand": 6.0,
+  "T_decl_pipeline": 6.0,
+  "T_conv_hand": 179.0,
+  "T_conv_pipeline": 179.0,
+  "FRE_state_hand": 173.0,
+  "FRE_state_pipeline": 173.0,
+  "match": true
+ }
+}

@@ -1,0 +1,257 @@
+{
+ "confirmation_delay": {
+  "seed": 1000,
+  "dist": "partition",
+  "policy": "B1",
+  "checks": [
+   {
+    "quantity": "before_n",
+    "hand": 478,
+    "pipeline": 478.0,
+    "match": true
+   },
+   {
+    "quantity": "before_never",
+    "hand": 0,
+    "pipeline": 0.0,
+    "match": true
+   },
+   {
+    "quantity": "before_mean",
+    "hand": 81.0597530238466,
+    "pipeline": 81.05975302384658,
+    "match": true
+   },
+   {
+    "quantity": "before_median",
+    "hand": 31.30562664266361,
+    "pipeline": 31.30562664266361,
+    "match": true
+   },
+   {
+    "quantity": "before_p95",
+    "hand": 257.7178980730577,
+    "pipeline": 257.7178980730577,
+    "match": true
+   },
+   {
+    "quantity": "before_x_mean",
+    "hand": -1.1552945088161228,
+    "pipeline": -1.1552945088161226,
+    "match": true
+   },
+   {
+    "quantity": "during_n",
+    "hand": 240,
+    "pipeline": 240.0,
+    "match": true
+   },
+   {
+    "quantity": "during_never",
+    "hand": 0,
+    "pipeline": 0.0,
+    "match": true
+   },
+   {
+    "quantity": "during_mean",
+    "hand": 102.96380222547279,
+    "pipeline": 102.9638022254728,
+    "match": true
+   },
+   {
+    "quantity": "during_median",
+    "hand": 82.23380658305163,
+    "pipeline": 82.23380658305163,
+    "match": true
+   },
+   {
+    "quantity": "during_p95",
+    "hand": 217.8209861084798,
+    "pipeline": 217.8209861084798,
+    "match": true
+   },
+   {
+    "quantity": "during_x_mean",
+    "hand": 5.165223823558363,
+    "pipeline": 5.165223823558363,
+    "match": true
+   },
+   {
+    "quantity": "after_n",
+    "hand": 1178,
+    "pipeline": 1178.0,
+    "match": true
+   },
+   {
+    "quantity": "after_never",
+    "hand": 0,
+    "pipeline": 0.0,
+    "match": true
+   },
+   {
+    "quantity": "after_mean",
+    "hand": 26.629322133105987,
+    "pipeline": 26.629322133105973,
+    "match": true
+   },
+   {
+    "quantity": "after_median",
+    "hand": 14.743640954913133,
+    "pipeline": 14.743640954913133,
+    "match": true
+   },
+   {
+    "quantity": "after_p95",
+    "hand": 97.32342686753897,
+    "pipeline": 97.32342686753896,
+    "match": true
+   },
+   {
+    "quantity": "after_x_mean",
+    "hand": -0.5267052409542476,
+    "pipeline": -0.5267052409542476,
+    "match": true
+   },
+   {
+    "quantity": "exposed_n",
+    "hand": 1896,
+    "pipeline": 1896.0,
+    "match": true
+   },
+   {
+    "quantity": "exposed_never",
+    "hand": 0,
+    "pipeline": 0.0,
+    "match": true
+   },
+   {
+    "quantity": "exposed_mean",
+    "hand": 50.01435440522726,
+    "pipeline": 50.01435440522731,
+    "match": true
+   },
+   {
+    "quantity": "exposed_median",
+    "hand": 22.195316450649713,
+    "pipeline": 22.195316450649717,
+    "match": true
+   },
+   {
+    "quantity": "exposed_p95",
+    "hand": 189.5919618255889,
+    "pipeline": 189.5919618255889,
+    "match": true
+   },
+   {
+    "quantity": "exposed_x_mean",
+    "hand": 0.035318654322677286,
+    "pipeline": 0.0353186543226776,
+    "match": true
+   },
+   {
+    "quantity": "blk_bcd",
+    "hand": 0.0,
+    "pipeline": 0.0,
+    "match": true
+   }
+  ],
+  "all_match": true
+ },
+ "eviction": {
+  "seed": 3000,
+  "dist": "burst",
+  "policy": "B1",
+  "cap_level": "mid",
+  "cap": 356,
+  "node": 0,
+  "decisions_checked": 1904,
+  "evictions_checked": 321,
+  "rejections_checked": 126,
+  "all_decisions_match": true,
+  "examples": [
+   {
+    "t": 305.7980505763117,
+    "tx": 1214,
+    "fee": 1.3286005784559298,
+    "held": 356,
+    "min_fee_before": 0.0,
+    "accepted": true,
+    "evicted": [
+     936
+    ],
+    "min_fee_after": 0.08162196217124486,
+    "match": true
+   },
+   {
+    "t": 305.8047916641157,
+    "tx": 3849,
+    "fee": 2.5393854963561693,
+    "held": 356,
+    "min_fee_before": 0.08162196217124486,
+    "accepted": true,
+    "evicted": [
+     3795
+    ],
+    "min_fee_after": 0.09521417086925947,
+    "match": true
+   },
+   {
+    "t": 305.8534598644863,
+    "tx": 3844,
+    "fee": 0.5378020280838547,
+    "held": 356,
+    "min_fee_before": 0.09521417086925947,
+    "accepted": true,
+    "evicted": [
+     883
+    ],
+    "min_fee_after": 0.10732318577034752,
+    "match": true
+   },
+   {
+    "t": 309.39686076290195,
+    "tx": 3944,
+    "fee": 0.08295466496797499,
+    "held": 344,
+    "min_fee_before": 0.1731818684125152,
+    "accepted": false,
+    "evicted": [],
+    "min_fee_after": 0.1731818684125152,
+    "match": true
+   },
+   {
+    "t": 309.87016103391124,
+    "tx": 1227,
+    "fee": 0.13773286424949402,
+    "held": 351,
+    "min_fee_before": 0.1731818684125152,
+    "accepted": false,
+    "evicted": [],
+    "min_fee_after": 0.1731818684125152,
+    "match": true
+   }
+  ],
+  "evicted_divergence_checks": [
+   {
+    "t_after_end": 10.0,
+    "hand": 3,
+    "pipeline": 3,
+    "match": true
+   },
+   {
+    "t_after_end": 60.0,
+    "hand": 3,
+    "pipeline": 3,
+    "match": true
+   },
+   {
+    "t_after_end": 300.0,
+    "hand": 0,
+    "pipeline": 0,
+    "match": true
+   }
+  ],
+  "evdiv_all_match": true
+ },
+ "all_match": true
+}

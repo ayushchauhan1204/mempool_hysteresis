@@ -1,0 +1,43 @@
+﻿primary: 20 cells x 30 seeds
+primary: 20 cells x 30 seeds
+  20/600 jobs  425s
+  40/600 jobs  1044s
+  60/600 jobs  2030s
+  80/600 jobs  2708s
+  100/600 jobs  3217s
+  120/600 jobs  3670s
+  140/600 jobs  4119s
+  160/600 jobs  4630s
+  180/600 jobs  4990s
+  200/600 jobs  5243s
+  220/600 jobs  5438s
+  240/600 jobs  5667s
+  260/600 jobs  5890s
+  280/600 jobs  5991s
+  300/600 jobs  6085s
+  320/600 jobs  6212s
+  340/600 jobs  6328s
+  360/600 jobs  6461s
+  380/600 jobs  6592s
+  400/600 jobs  6654s
+  420/600 jobs  8752s
+  440/600 jobs  8821s
+  460/600 jobs  8882s
+  480/600 jobs  8936s
+  500/600 jobs  9003s
+  520/600 jobs  9038s
+  540/600 jobs  9072s
+  560/600 jobs  9102s
+  580/600 jobs  9140s
+  600/600 jobs  9171s
+secondary: re-calibrating SARA for 3 cells on dev seeds 0-4
+  calibrated random_regular_n50_d4_scaled: {'tau_m': 9.82, 'eps_D': 0.4579591836734694, 'beta': 6.490649, 'eps_size': 0.06009116279069763}
+  calibrated watts_strogatz_n50_d4_scaled: {'tau_m': 15.0, 'eps_D': 0.0051042954875257585, 'beta': 6.50065, 'eps_size': 0.1275}
+  calibrated erdos_renyi_n50_d4_scaled: {'tau_m': 15.84, 'eps_D': 0.0, 'beta': 6.493149249999999, 'eps_size': 0.19048999999999977}
+secondary: 90 jobs
+  20/90 jobs  313s
+  40/90 jobs  470s
+  60/90 jobs  602s
+  80/90 jobs  706s
+  90/90 jobs  761s
+wrote D:\mempool_hysteresis_working_model\mempool_hysteresis\results\extensions\ext_b_runs.csv (5604 rows)
